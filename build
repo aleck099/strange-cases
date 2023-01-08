@@ -1,0 +1,10 @@
+#!/bin/bash
+
+g++ t.cpp -c
+g++ t.o -o out1 -L. -llcf -licuuc
+g++ t.o -o out2 -licui18n -licuuc
+echo "ldd out1:"
+ldd out1
+echo "ldd out2:"
+ldd out2
+
